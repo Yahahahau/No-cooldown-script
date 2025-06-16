@@ -1,4 +1,6 @@
-local old_wait = wait
-wait = function(seconds)
-    return old_wait(0.01)
+while true do
+    for _, tool in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        tool:Activate()
+    end
+    wait(0.01)
 end
